@@ -1,7 +1,6 @@
 package com.devsuperior.dspesquisa.entities;
 
 import java.io.Serializable;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,8 +27,10 @@ public class Game implements Serializable {
 	private String title;
 	private Platform platform;
 	
+	
 	@OneToMany(mappedBy = "game")
 	private List<Record> records = new ArrayList<>();
+	
 	
 	@ManyToOne
 	@JoinColumn(name= "genre_id")
