@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
 import './styles.css';
 import api from '../../services/api';
-import { RecordsResponse } from './types';
-import { formatDate } from './helpers';
 import Pagination from './Pagination';
+import { formatDate } from './helpers';
+import { RecordsResponse } from './types';
 import Filters from '../../components/Filters';
+import React, { useEffect, useState } from 'react';
 
 const Records: React.FC = () => {
   const [ recordsResponse, setRecordsResponse ] = useState<RecordsResponse>();

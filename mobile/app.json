@@ -1,8 +1,11 @@
 {
   "expo": {
-    "name": "mobile",
-    "slug": "mobile",
+    "name": "BGS",
+    "slug": "BGS",
     "version": "1.0.0",
+    "platforms": [
+      "android"
+    ],
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -21,6 +24,10 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "android": {
+      "package": "com.paulosergio.BGS",
+      "versionCode": 1
     }
   }
 }

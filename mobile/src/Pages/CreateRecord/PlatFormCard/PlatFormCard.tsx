@@ -1,9 +1,9 @@
-import React from 'react';
-import { GamePlatform } from '../types';
-import styles from './styles';
 import { RectButton } from 'react-native-gesture-handler';
 import { FontAwesome5 as Icon } from '@expo/vector-icons';
+import { GamePlatform } from '../types';
 import { Text } from 'react-native';
+import styles from './styles';
+import React from 'react';
 
 interface Props {
     platform: GamePlatform;
@@ -31,6 +31,5 @@ const PlatFormCard: React.FC<Props> = ({ platform, onChange, icon, activePlatfor
     </RectButton>
   );
 }
-
 
 export default PlatFormCard;

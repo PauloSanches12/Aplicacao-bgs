@@ -1,8 +1,8 @@
-import React from 'react';
-import { Image, Text, View } from 'react-native';
-import styles from './styles';
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
+import { Image, Text, View } from 'react-native';
+import styles from './styles';
+import React from 'react';
 
 const Header: React.FC = () => {
 

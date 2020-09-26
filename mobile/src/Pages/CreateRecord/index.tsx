@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import { Alert, Text, TextInput, View } from 'react-native';
-import Header from '../../components/Header';
-import PlatFormCard from './PlatFormCard/PlatFormCard';
 import styles from './styles';
+import api from '../../services/api';
 import pickerSelectStyles from './styles'; //precisa inportar pro estilo do select funcionar
 import { Game, GamePlatform } from './types';
+import Header from '../../components/Header';
+import React, { useEffect, useState } from 'react';
+import PlatFormCard from './PlatFormCard/PlatFormCard';
 import RNPickerSelect from 'react-native-picker-select';
 import { FontAwesome5 as Icon } from '@expo/vector-icons';
 import { RectButton } from 'react-native-gesture-handler';
-import api from '../../services/api';
+import { Alert, Text, TextInput, View } from 'react-native';
 
 const placeholder = {
   label: "Selecione o Game",
@@ -35,7 +35,7 @@ const CreateRecord: React.FC = () => {
   useEffect(() =>{
     api.get('games').then(response => {
       const selectValues = mapSelectValues(response.data);
-      console.log(selectValues)
+      
       setAllGames(selectValues);
     })
     .catch(() => Alert.alert('Erro ao listar os jogos!'))
@@ -82,7 +82,7 @@ const CreateRecord: React.FC = () => {
 
         <View style={styles.footer}>
           <RectButton style={styles.button} onPress={handleSubmit}>
-            <Text style={styles.buttonText}>SARVAR</Text>
+            <Text style={styles.buttonText}>SALVAR</Text>
           </RectButton>
         </View>
       </View>

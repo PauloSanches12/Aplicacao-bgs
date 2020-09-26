@@ -1,11 +1,10 @@
-import React from 'react';
-import { Alert, Image, Text, View } from 'react-native';
-import { FontAwesome5 as Icon } from '@expo/vector-icons';
-import styles from './styles';
-
 import { RectButton } from 'react-native-gesture-handler'; 
-import Header from '../../components/Header';
+import { FontAwesome5 as Icon } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
+import { Image, Text, View } from 'react-native';
+import Header from '../../components/Header';
+import styles from './styles';
+import React from 'react';
 
 const Home: React.FC = () => {
 

@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import Filters from '../../components/Filters';
 import './styles.css';
 import Chart from 'react-apexcharts';
-import { barOptions, pieOptions } from './chart-options';
 import api from '../../services/api';
+import Filters from '../../components/Filters';
+import React, { useEffect, useState } from 'react';
+import { barOptions, pieOptions } from './chart-options';
 import { buildBarSeries, getGenderChartData, getPlatformChartData } from './helpers';
 
 interface PieChartData {
